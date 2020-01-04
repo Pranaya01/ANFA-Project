@@ -1,0 +1,25 @@
+CREATE TABLE If NOT Exists detail_match_stats(
+    row_id INT NOT NULL,
+    match_detail_stats_id INT(128) NOT NULL AUTO_INCREMENT,
+    tournament_id INT(128), 
+    match_id INT(128), 
+    club_1_possession VARCHAR(20),
+    club_2_possession VARCHAR(20),
+    club_1_shots INT(11),
+    club_2_shots INT(11),
+    club_1_shots_on_target INT(11),
+    club_2_shots_on_target INT(11),
+    club_1_passes INT(11),
+    club_2_passes INT(11),
+    club_1_offside INT(11),
+    club_2_offside INT(11),
+    club_1_corners INT(11),
+    club_2_corners INT(11),
+    club_1_fouls INT(11),
+    club_2_fouls INT(11),
+    UNIQUE (row_id),
+    PRIMARY KEY (match_detail_stats_id),
+    FOREIGN KEY (tournament_id) REFERENCES tournaments(tournament_id),
+    FOREIGN KEY (match_id) REFERENCES matches(match_id)
+
+);

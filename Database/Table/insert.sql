@@ -186,3 +186,11 @@ VALUES
  (19, 19, 1, 19, '58%', '42%', '10', '5', '3', '2', '185', '134', '2', '7', '4', '3', '22', '12'),
  (20, 20, 1, 20, '45%', '55%', '8', '16', '4', '8', '320', '385', '2', '5', '4', '6', '9', '5'),
  (21, 21, 1, 21, '54%', '46%', '7', '18', '2', '5', '275', '234', '1', '2', '2', '3', '14', '14');
+
+ INSERT INTO `detail_match_stats` (`row_id`, `match_detail_stats_id`, `tournament_id`, `match_id`, `club_1_possession`, `club_2_possession`, `club_1_shots`, `club_2_shots`, `club_1_shots_on_target`, `club_2_shots_on_target`, `club_1_passes`, `club_2_passes`, `club_1_offside`, `club_2_offside`, `club_1_corners`, `club_2_corners`, `club_1_fouls`, `club_2_fouls`) 
+ VALUES ('22', '22', '1', '22', '29%', '71%', '5', '22', '2', '8', '127', '316', '1', '0', '0', '7', '9', '4'), 
+ ('23', '23', '1', '23', '50%', '50%', '6', '6', '2', '2', '234', '236', '4', '3', '2', '4', '13', '23');
+
+INSERT INTO `detail_match_stats` (`row_id`, `match_detail_stats_id`, `tournament_id`, `match_id`, `club_1_possession`, `club_2_possession`, `club_1_shots`, `club_2_shots`, `club_1_shots_on_target`, `club_2_shots_on_target`, `club_1_passes`, `club_2_passes`, `club_1_offside`, `club_2_offside`, `club_1_corners`, `club_2_corners`, `club_1_fouls`, `club_2_fouls`) 
+VALUES ('24', '24', '1', '24', '55%', '45%', '6', '14', '2', '6', '220', '179', '7', '1', '2', '3', '14', '20'), 
+('25', '25', '1', '25', '45%', '55%', '8', '9', '5', '3', '209', '258', '2', '8', '5', '4', '18', '11');
